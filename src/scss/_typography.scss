@@ -7,7 +7,6 @@ html {
 }
 body {
   font-family: $font-family--main;
-  font-size: 2rem;
 }
 
 h1,
@@ -23,4 +22,30 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid $color-dark-violet;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-dark-violet;
+    color: $color-white;
+  }
+  transition: all 0.3s;
+  outline: none;
+  &--reversed {
+    border-color: $color-white;
+    color: $color-white;
+    &:hover {
+      color: $color-dark-violet;
+      background-color: $color-white;
+    }
+  }
 }
