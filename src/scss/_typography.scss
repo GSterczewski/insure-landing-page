@@ -1,0 +1,26 @@
+$font-family--main: "Karla", sans-serif;
+$font-family--headings: "DM Serif Display", serif;
+$font-weight--headings: 400;
+
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: $font-family--main;
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-family--headings;
+  font-weight: $font-weight--headings;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
