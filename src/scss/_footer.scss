@@ -1,0 +1,129 @@
+.footer {
+  position: relative;
+  padding: 0 3rem;
+  background-color: $color-gray--light;
+
+  @media only screen and (min-width: 800px) {
+    padding: 0 5rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #d9d9d9;
+
+    @media only screen and (min-width: 800px) {
+      flex-direction: row;
+      padding: 3rem 0;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 4rem;
+
+    @media only screen and (min-width: 800px) {
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  &__sm-links {
+    margin-bottom: 4rem;
+
+    @media only screen and (min-width: 800px) {
+      margin-bottom: 0;
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+
+      & svg {
+        & * {
+          transition: all 0.2s;
+        }
+
+        &:hover * {
+          fill: $color-dark-violet;
+        }
+      }
+    }
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    padding-top: 3rem;
+
+    @media only screen and (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, min-content);
+    }
+
+    @media only screen and (min-width: 800px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  background: url("./assets/images/bg-pattern-footer-mobile.svg")
+    $color-gray--light;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media only screen and (min-width: 800px) {
+    background: url("./assets/images/bg-pattern-footer-desktop.svg")
+      $color-gray--light;
+    background-repeat: no-repeat;
+  }
+}
+
+.subnavigation {
+  text-align: center;
+  text-transform: uppercase;
+
+  &__heading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $color-gray;
+  }
+
+  &__link {
+    color: $color-dark-violet;
+    font-size: 1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  @media only screen and (min-width: 800px) {
+    text-align: start;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
