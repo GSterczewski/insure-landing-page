@@ -1,0 +1,34 @@
+.hamburger-menu {
+  border: 2px solid $color-dark-violet;
+  padding: 8px 5px;
+  background-color: $color-white;
+  outline: none;
+
+  &__bar {
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: $color-dark-violet;
+    transition: all 0.3s;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.hamburger-menu--open .hamburger-menu__bar--top {
+  transform: rotate(45deg) translate(3px, 4px);
+}
+
+.hamburger-menu--open .hamburger-menu__bar--middle {
+  opacity: 0;
+}
+
+.hamburger-menu--open .hamburger-menu__bar--bottom {
+  transform: rotate(-45deg) translate(3px, -4px);
+}
