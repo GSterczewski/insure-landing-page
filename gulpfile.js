@@ -6,10 +6,10 @@ const uglify = require("gulp-uglify");
 
 const config = {
     buildDir : "./build/**/*",
-    jsSource : "./src/js/**/*.js",
+    jsSource : "./src/**/*.js",
     sassSource : "./src/scss/**/*.scss",
     cssOutput : "./build",
-    jsOutput : "./build/js",
+    jsOutput : "./build/",
     serverDir : "./build",
     htmlSource: "./src/*.html",
     htmlOutput: "./build",
