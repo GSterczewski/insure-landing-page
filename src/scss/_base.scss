@@ -37,16 +37,20 @@ ul {
   letter-spacing: 1px;
   text-transform: uppercase;
   border: 1px solid $color-dark-violet;
-  &:hover {
+
+  &:hover,
+  &:focus {
     cursor: pointer;
     background-color: $color-dark-violet;
     color: $color-white;
   }
   transition: all 0.3s;
   outline: none;
+
   &--reversed {
     border-color: $color-white;
     color: $color-white;
+
     &:hover {
       color: $color-dark-violet;
       background-color: $color-white;
