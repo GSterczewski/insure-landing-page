@@ -48,16 +48,6 @@
       &:not(:last-child) {
         margin-right: 1.5rem;
       }
-
-      & svg {
-        & * {
-          transition: all 0.2s;
-        }
-
-        &:hover * {
-          fill: $color-dark-violet;
-        }
-      }
     }
   }
 
@@ -103,7 +93,8 @@
     color: $color-dark-violet;
     font-size: 1rem;
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
   }
@@ -125,5 +116,23 @@
 
   li {
     margin-bottom: 0.5rem;
+  }
+}
+
+.sm-link {
+  &__icon {
+    fill: $color-gray;
+    transition: all 0.2s;
+  }
+  &:focus > &__icon {
+    fill: $color-dark-violet;
+  }
+  &:hover > &__icon {
+    fill: $color-dark-violet;
+  }
+}
+.sm-link__icon {
+  &:focus {
+    fill: $color-dark-violet;
   }
 }
